@@ -1,0 +1,77 @@
+.add-fund-container {
+  min-height: 100vh;
+  background-color: #0f172a; /* dark background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Heading */
+.add-fund-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #38bdf8; /* sky blue */
+  text-align: center;
+}
+
+/* Form box */
+.add-fund-container form {
+  background-color: #1e293b; /* dark card */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.1); /* subtle sky shadow */
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Input fields */
+.add-fund-container input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-fund-container input:focus {
+  border-color: #38bdf8;
+  outline: none;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.4);
+}
+
+/* Submit button */
+.add-fund-container button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #38bdf8; /* sky blue */
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-fund-container button:hover {
+  background-color: #0ea5e9; /* brighter sky */
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .add-fund-container {
+    padding: 1rem;
+  }
+
+  .add-fund-container form {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,82 @@
+/* Page Layout */
+.login-container {
+  min-height: 100vh;
+  background-color: #0f172a; /* dark navy */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+/* Box */
+.login-box {
+  background-color: #1e293b; /* dark slate */
+  padding: 40px 32px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.1); /* soft sky glow */
+}
+
+/* Title */
+.login-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #38bdf8; /* sky blue */
+  margin-bottom: 24px;
+}
+
+/* Error message */
+.login-error {
+  background-color: #fee2e2; /* light red */
+  color: #b91c1c; /* red text */
+  padding: 10px 15px;
+  border: 1px solid #f87171;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inputs */
+.login-input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #64748b; /* slate border */
+  background-color: #0f172a;
+  color: #f1f5f9;
+  font-size: 16px;
+  transition: border 0.2s;
+}
+
+.login-input:focus {
+  border-color: #38bdf8;
+  outline: none;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.5);
+}
+
+/* Button */
+.login-button {
+  padding: 12px;
+  background-color: #0ea5e9;
+  color: #0f172a;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #38bdf8;
+  color: white;
+}

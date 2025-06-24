@@ -1,0 +1,99 @@
+.fund-details-container {
+  padding: 40px 16px;
+  min-height: 100vh;
+  background-color: #0f172a; /* Dark navy background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fund-details-box {
+  background-color: #1e293b; /* Card background */
+  padding: 30px 24px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.12); /* Sky blue glow */
+  text-align: center;
+}
+
+.fund-details-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8; /* Sky blue */
+  margin-bottom: 16px;
+}
+
+.fund-details-meta,
+.fund-details-nav {
+  font-size: 16px;
+  color: #e2e8f0; /* Soft light text */
+  margin-bottom: 12px;
+}
+
+.fund-details-nav strong {
+  color: #7dd3fc; /* Light sky blue for labels */
+}
+
+/* Save + Back Buttons Container */
+.fund-details-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Spacing between Save and Back buttons */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Save button */
+.fund-details-save {
+  background-color: #22c55e;
+  color: #0f172a;
+  padding: 10px 18px;
+  margin-right: 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fund-details-save:hover {
+  background-color: #16a34a;
+  color: white;
+}
+
+.fund-details-save:disabled {
+  background-color: #4ade80;
+  color: #1e293b;
+  cursor: not-allowed;
+}
+
+/* Back button */
+.fund-details-button {
+  background-color: #0ea5e9; /* Sky */
+  color: #0f172a;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fund-details-button:hover {
+  background-color: #38bdf8;
+  color: white;
+}
+
+/* Loading or error messages */
+.fund-details-message {
+  font-size: 16px;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+.fund-details-error {
+  font-size: 16px;
+  color: #f87171;
+  text-align: center;
+}

@@ -1,0 +1,110 @@
+/* General container */
+.landing-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #0f172a; /* Dark navy background */
+  min-height: 100vh;
+}
+
+/* Centered content box */
+.landing-box {
+  width: 100%;
+  max-width: 800px;
+  background: #1e293b; /* Darker card */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.06);
+}
+
+/* Title */
+.landing-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #38bdf8; /* Sky blue */
+  margin-bottom: 30px;
+}
+
+/* Search bar */
+.landing-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.landing-input:focus {
+  border-color: #38bdf8;
+  outline: none;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+
+/* Info messages */
+.landing-info,
+.landing-error {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #f87171; /* Light red for alerts */
+}
+
+/* Fund list (vertical) */
+.fund-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Fund card (Google-style row) */
+.fund-result-row {
+  background: #1e293b;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.fund-result-row:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2); /* sky glow */
+}
+
+.fund-result-row h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #e0f2fe; /* light sky text */
+}
+
+.fund-result-row p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #94a3b8; /* muted slate text */
+}
+
+/* Informational section */
+.fund-info {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  line-height: 1.6;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+
+.fund-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #38bdf8;
+}
+
+.fund-info p {
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}

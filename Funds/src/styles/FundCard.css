@@ -1,0 +1,67 @@
+.fund-card {
+  background-color: #1e293b; /* Dark card */
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.08); /* Sky glow */
+  margin: 12px auto;
+  max-width: 500px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  color: #e2e8f0;
+}
+
+.fund-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+}
+
+.fund-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #38bdf8; /* Sky blue title */
+}
+
+.fund-meta {
+  font-size: 0.95rem;
+  color: #94a3b8; /* soft gray-blue */
+}
+
+.fund-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.fund-view-button,
+.fund-save-button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+/* View Details Button */
+.fund-view-button {
+  background-color: #38bdf8; /* Sky */
+  color: #0f172a;
+}
+
+.fund-view-button:hover {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+/* Save Button */
+.fund-save-button {
+  background-color: #22c55e; /* green */
+  color: #0f172a;
+}
+
+.fund-save-button:hover {
+  background-color: #16a34a;
+  color: white;
+}

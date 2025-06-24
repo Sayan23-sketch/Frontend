@@ -1,0 +1,76 @@
+/* Reset margins and paddings for links */
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar main style */
+.navbar {
+  background-color: #0f172a; /* Dark navy */
+  color: #f1f5f9;            /* Light text */
+  padding: 16px 24px;
+  display: flex;
+  width: 1220px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #facc15; /* Gold accent */
+}
+
+/* Links container */
+.navbar-links {
+  display: flex;
+  gap: 16px;
+}
+
+/* Each link */
+.navbar-links a {
+  font-size: 1rem;
+  color: #f1f5f9;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.navbar-links a:hover {
+  color: #cbd5e1; /* Muted light gray */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .navbar-links a {
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #f1f5f9;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.logout-button:hover {
+  color: #cbd5e1;
+}
