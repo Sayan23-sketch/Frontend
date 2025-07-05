@@ -11,6 +11,7 @@ function FundCard({ fund, onSave, showSaveButton = true }) {
     onSave && onSave(fund);
   };
 
+  
   return (
     <div className="fund-card">
       <h2 className="fund-title">{fund.schemeName}</h2>
